@@ -5,6 +5,7 @@ A node.js module, which provides an object oriented wrapper for the JIRA REST AP
 This library is built to support version `3.9.1` of the JIRA Service Desk API.
 
 JIRA Service Desk API documentation can be found [here](https://docs.atlassian.com/jira-servicedesk/REST/3.9.1/)
+[Service Desk Public REST API](https://developer.atlassian.com/cloud/jira/service-desk/rest/#api-servicedesk-get)
 
 ## Installation
 
