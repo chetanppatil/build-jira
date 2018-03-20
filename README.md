@@ -10,7 +10,7 @@ JIRA Service Desk API documentation can be found [here](https://docs.atlassian.c
 
 Install with the node package manager [npm](http://npmjs.org):
 
-```
+```shell
 $ npm install build-jira
 ```
 
@@ -18,7 +18,7 @@ $ npm install build-jira
 
 ### Create the JIRA client
 
-```
+```js
 jiraApi = require('build-jira').jira;
 
 var jira = new jiraApi({
@@ -30,7 +30,7 @@ var jira = new jiraApi({
 
 ### Get Service Desk Information
 
-```
+```js
 jira.servicedeskInfo(null, function(error, body){
   console.log('RESPONSE: ', error, body);
 });
