@@ -49,6 +49,14 @@ jira.servicedesks({ start: 0, limit: 10 }, function(error, body){
 });
 ```
 
+### Get Service Desk By Id
+
+```js
+jira.servicedeskById(<service-desk-id>, function(error, body){
+  console.log('RESPONSE: ', error, body);
+});
+```
+
 ## Options
 
 jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
