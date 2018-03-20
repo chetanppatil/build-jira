@@ -52,4 +52,6 @@ jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
 
 ## Changelog
 
+- _1.0.2 servicedeskInfo parameter corrected_
+- _1.0.1 READEME file added_
 - _1.0.0 Initial version_
