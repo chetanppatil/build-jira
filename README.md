@@ -44,7 +44,7 @@ jira.servicedeskInfo(null, function(error, body){
 ```js
 /* If start and limit is not passed, then default values 0 and 10 will get applied respectively */
 
-jira.getAllServicedesks({ start: 0, limit: 10 }, function(error, body){
+jira.servicedesks({ start: 0, limit: 10 }, function(error, body){
   console.log('RESPONSE: ', error, body);
 });
 ```
@@ -61,6 +61,7 @@ jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
 
 - Service Desk
   - Infomation
+  - Get All Service Desks
 
 ## Changelog
 
