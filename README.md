@@ -4,8 +4,7 @@ A node.js module, which provides an object oriented wrapper for the JIRA REST AP
 
 This library is built to support version `3.9.1` of the JIRA Service Desk API.
 
-JIRA Service Desk API documentation can be found [here](https://docs.atlassian.com/jira-servicedesk/REST/3.9.1/)
-[Service Desk Public REST API](https://developer.atlassian.com/cloud/jira/service-desk/rest/#api-servicedesk-get)
+JIRA Service Desk API documentation can be found [here](https://docs.atlassian.com/jira-servicedesk/REST/3.9.1/) [Service Desk Public REST API](https://developer.atlassian.com/cloud/jira/service-desk/rest/#api-servicedesk-get)
 
 ## Installation
 
@@ -19,7 +18,7 @@ $ npm install build-jira
 
 ### Create the JIRA client
 
-```js
+```javascript
 jiraApi = require('build-jira').jira;
 
 var jira = new jiraApi({
@@ -31,29 +30,44 @@ var jira = new jiraApi({
 
 ### Get Service Desk Information
 
-```js
+```javascript
 /* For servicedeskInfo input is not required, hence first parameter is null in this call. */
 
-jira.servicedeskInfo(null, function(error, body){
+jira.serviceDeskInfo(null, function(error, body){
   console.log('RESPONSE: ', error, body);
 });
 ```
 
 ### Get All Service Desks
 
-```js
+```javascript
 /* If start and limit is not passed, then default values 0 and 10 will get applied respectively */
 
-jira.servicedesks({ start: 0, limit: 10 }, function(error, body){
+jira.serviceDesks({ start: 0, limit: 10 }, function(error, body){
   console.log('RESPONSE: ', error, body);
 });
 ```
 
 ### Get Service Desk By Id
 
-```js
-jira.servicedeskById(<service-desk-id>, function(error, body){
+```javascript
+jira.serviceDeskById(<service-desk-id>, function(error, body){
   console.log('RESPONSE: ', error, body);
+});
+```
+
+### Create New Ticket In Service Desk
+
+```javascript
+let input = {
+  serviceDeskId: <service-desk-id>,
+  requestTypeId: <request-queue-id>,
+  summary: <your-ticket-title>,
+  description: <explanation-about-ticket>
+};
+
+instance.createServiceDeskTicket(input, function(error, body){
+  console.log('err', error, body);
 });
 ```
 
@@ -68,11 +82,15 @@ jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
 ## Implemented APIs
 
 - Service Desk
+
   - Infomation
   - Get All Service Desks
+  - Get Service Desk By Id
+  - Create New Ticket In Service Desk
 
 ## Changelog
 
-- _1.0.2 servicedeskInfo parameter corrected_
+- _1.0.3 createServiceDeskTicket function added_
+- _1.0.2 serviceDeskInfo parameter corrected_
 - _1.0.1 READEME file added_
 - _1.0.0 Initial version_
