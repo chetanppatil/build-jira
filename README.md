@@ -66,7 +66,7 @@ let input = {
   description: <explanation-about-ticket>
 };
 
-instance.createServiceDeskTicket(input, function(error, body){
+jira.createServiceDeskTicket(input, function(error, body){
   console.log('err', error, body);
 });
 ```
