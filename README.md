@@ -67,7 +67,7 @@ let input = {
 };
 
 jira.createServiceDeskTicket(input, function(error, body){
-  console.log('err', error, body);
+  console.log('RESPONSE:', error, body);
 });
 ```
 
