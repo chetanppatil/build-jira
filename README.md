@@ -32,7 +32,7 @@ var jira = new jiraApi({
 ### Get Service Desk Information
 
 ```js
-/* For servicedeskInfo input is not required, that's why in above call first parameter is null. */
+/* For servicedeskInfo input is not required, hence first parameter is null in this call. */
 
 jira.servicedeskInfo(null, function(error, body){
   console.log('RESPONSE: ', error, body);
