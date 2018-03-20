@@ -32,11 +32,22 @@ var jira = new jiraApi({
 ### Get Service Desk Information
 
 ```js
+/* For servicedeskInfo input is not required, that's why in above call first parameter is null. */
+
 jira.servicedeskInfo(null, function(error, body){
   console.log('RESPONSE: ', error, body);
 });
 ```
-_For servicedeskInfo input is not required, that's why in above call first parameter is null._
+
+### Get All Service Desks
+
+```js
+/* If start and limit is not passed, then default values 0 and 10 will get applied respectively */
+
+jira.getAllServicedesks({ start: 0, limit: 10 }, function(error, body){
+  console.log('RESPONSE: ', error, body);
+});
+```
 
 ## Options
 
