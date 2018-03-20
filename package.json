@@ -1,6 +1,6 @@
 {
   "name": "build-jira",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integrate JIRA APIs with your node application easily",
   "main": "index.js",
   "scripts": {
