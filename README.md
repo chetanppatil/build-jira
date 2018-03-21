@@ -1,4 +1,4 @@
-# NPN Package For JIRA REST API
+# NPM Package For JIRA (Service Desk) REST API
 
 A node.js module, which provides an object oriented wrapper for the JIRA REST API.
 
