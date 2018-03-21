@@ -19,9 +19,9 @@ $ npm install build-jira
 ### Create the JIRA client
 
 ```javascript
-jiraApi = require('build-jira').jira;
+const jiraApi = require('build-jira').jira;
 
-var jira = new jiraApi({
+const jira = new jiraApi({
   host: <your-jira-host>,
   username: <jira-user>,
   password: <jira-user-password>
@@ -33,7 +33,7 @@ var jira = new jiraApi({
 ```javascript
 /* For servicedeskInfo input is not required, hence first parameter is null in this call. */
 
-jira.serviceDeskInfo(null, function(error, body){
+jira.serviceDeskInfo(null, (error, body) => {
   console.log('RESPONSE: ', error, body);
 });
 ```
@@ -43,7 +43,7 @@ jira.serviceDeskInfo(null, function(error, body){
 ```javascript
 /* If start and limit is not passed, then default values 0 and 10 will get applied respectively */
 
-jira.serviceDesks({ start: 0, limit: 10 }, function(error, body){
+jira.getAllServiceDesks({ start: 0, limit: 10 }, (error, body) => {
   console.log('RESPONSE: ', error, body);
 });
 ```
@@ -51,7 +51,7 @@ jira.serviceDesks({ start: 0, limit: 10 }, function(error, body){
 ### Get Service Desk By Id
 
 ```javascript
-jira.serviceDeskById(<service-desk-id>, function(error, body){
+jira.getServiceDeskById(<service-desk-id>, (error, body) => {
   console.log('RESPONSE: ', error, body);
 });
 ```
@@ -66,7 +66,7 @@ let input = {
   description: <explanation-about-ticket>
 };
 
-jira.createServiceDeskTicket(input, function(error, body){
+jira.createServiceDeskTicket(input, (error, body) => {
   console.log('RESPONSE:', error, body);
 });
 ```
