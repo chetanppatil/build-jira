@@ -6,7 +6,7 @@ This library is built to support version `3.9.1` of the JIRA Service Desk API.
 
 JIRA Service Desk API documentation can be found [here](https://docs.atlassian.com/jira-servicedesk/REST/3.9.1/)
 
-[Service Desk Public REST API](https://developer.atlassian.com/cloud/jira/service-desk/rest/#api-servicedesk-get)
+[Service Desk Public REST API](https://developer.atlassian.com/cloud/jira/service-desk/rest/)
 
 ## Installation
 
@@ -69,6 +69,31 @@ let input = {
 };
 
 jira.createServiceDeskTicket(input, (error, body) => {
+  console.log('RESPONSE:', error, body);
+});
+```
+
+### Get Customer Requests(Tickets)
+
+```javascript
+/* start and limit are used for pagination */
+
+/*
+  NOTE: HERE input IS NOT MANDATORY
+  IF YOU PASS IT THEN IT WILL RETURN DATA ACCORDINGLY
+  ELSE IT WILL RETURN DEFAULT DATA
+*/
+
+let input = {
+  start: <start-index>,
+  limit: <number-of-records-to-return>,
+  requestOwnership: <ticket-ownership-type>,
+  requestStatus: <request-ticket-status>,
+  searchString: <string-to-get-matching-records>,
+  serviceDeskId: <servicedeskid-to-get-records>
+};
+
+jira.getAllRequestsOfCustomer(input, (error, body) => {
   console.log('RESPONSE:', error, body);
 });
 ```
