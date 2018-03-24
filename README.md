@@ -8,6 +8,8 @@ JIRA Service Desk API documentation can be found [here](https://docs.atlassian.c
 
 [Service Desk Public REST API](https://developer.atlassian.com/cloud/jira/service-desk/rest/)
 
+This package is written using [Javascript Standard Style](https://standardjs.com/rules.html)
+
 ## Installation
 
 Install with the node package manager [npm](http://npmjs.org):
