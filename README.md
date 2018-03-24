@@ -100,6 +100,14 @@ jira.getAllRequestsOfCustomer(input, (error, body) => {
 });
 ```
 
+### Get Customer Request By Id
+
+```javascript
+jira.getCustomerRequestById(<issue-id-key>, (error, body) => {
+  console.log('RESPONSE: ', error, body);
+});
+```
+
 ## Options
 
 jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
@@ -116,9 +124,13 @@ jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
   - Get All Service Desks
   - Get Service Desk By Id
   - Create New Ticket In Service Desk
+  - Get All Requests Of Customer
+  - Get Customer Request By Id
 
 ## Changelog
 
+- _1.0.5 getAllRequestsOfCustomer, getCustomerRequestById functions added and Javascript Standard Style Guid applied_
+- _1.0.4 README updated_
 - _1.0.3 createServiceDeskTicket function added_
 - _1.0.2 serviceDeskInfo parameter corrected_
 - _1.0.1 READEME file added_
