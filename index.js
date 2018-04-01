@@ -1,3 +1,3 @@
-require('./lib/serviceDesk');
+require('./lib/serviceDesk')
 
-exports.jira = require('./lib/jiraConnect').jira;
+exports.jira = require('./lib/jiraConnect').jira

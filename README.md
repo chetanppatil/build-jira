@@ -1,6 +1,6 @@
 # NPM Package For JIRA (Service Desk) REST API
 
-[![Build Status](https://travis-ci.org/Chetan07j/build-jira.svg?branch=master)](https://travis-ci.org/Chetan07j/build-jira)
+<!-- [![Build Status](https://travis-ci.org/Chetan07j/build-jira.svg?branch=master)](https://travis-ci.org/Chetan07j/build-jira) -->
 
 A node.js module, which provides an object oriented wrapper for the JIRA REST API.
 
@@ -110,6 +110,22 @@ jira.getCustomerRequestById(<issue-id-key>, (error, body) => {
 });
 ```
 
+### Create Attachment For Issue/Ticket/Request In Service Desk
+
+```javascript
+
+let input = {
+  serviceDeskId: <service-desk-id>,
+  issueId: <issue-id-to-add-attachment>,
+  file: [<array-of-file-paths-to-attach>],
+  comment: <comment-to-add-for-attachment-if-any>
+};
+
+jira.createCustomerAttachment(input, (error, body) => {
+  console.log('RESPONSE:', error, body);
+});
+```
+
 ## Options
 
 jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
@@ -128,9 +144,11 @@ jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
   - Create New Ticket In Service Desk
   - Get All Requests Of Customer
   - Get Customer Request By Id
+  - Create Attachment To Customer Request
 
 ## Changelog
 
+- _1.0.6 createCustomerAttachment function added_
 - _1.0.5 getAllRequestsOfCustomer, getCustomerRequestById functions added and Javascript Standard Style Guid applied_
 - _1.0.4 README updated_
 - _1.0.3 createServiceDeskTicket function added_
