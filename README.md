@@ -1,5 +1,7 @@
 # NPM Package For JIRA (Service Desk) REST API
 
+[![Build Status](https://travis-ci.org/Chetan07j/build-jira.svg?branch=master)](https://travis-ci.org/Chetan07j/build-jira)
+
 A node.js module, which provides an object oriented wrapper for the JIRA REST API.
 
 This library is built to support version `3.9.1` of the JIRA Service Desk API.
