@@ -22,7 +22,7 @@ describe('JIRA CONNECT TEST:', () => {
 
   it('Should throw error ("Missing JIRA username") if no username is passed to function', (done) => {
     let config = { host: 'https://<your-host>', username: '<your-jira-username>' }
-    expect(function () { new JiraApi(config) }).to.throw('Missing JIRA user passwords')
+    expect(function () { new JiraApi(config) }).to.throw('Missing JIRA user password')
     done()
   })
 })
