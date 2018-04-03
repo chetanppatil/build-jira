@@ -1,11 +1,12 @@
 # NPM Package For JIRA (Service Desk) REST API
 
 <!-- [![Build Status](https://travis-ci.org/Chetan07j/build-jira.svg?branch=master)](https://travis-ci.org/Chetan07j/build-jira) -->
-[![HitCount](http://hits.dwyl.io/chetan07j/build-jira.svg)](http://hits.dwyl.io/chetan07j/build-jira) [![Generic badge](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://standardjs.com)
-
-<!-- [![GitHub license](https://img.shields.io/github/license/chetan07j/build-jira.svg)](https://github.com/Chetan07j/build-jira/blob/master/LICENSE) -->
+[![HitCount](http://hits.dwyl.io/chetan07j/build-jira.svg)](http://hits.dwyl.io/chetan07j/build-jira)
+[![Generic badge](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://standardjs.com)
+[![GitHub license](https://img.shields.io/github/license/chetan07j/build-jira.svg)](https://github.com/Chetan07j/build-jira/blob/master/LICENSE)
 [![GitHub contributors](https://img.shields.io/github/contributors/chetan07j/build-jira.svg)](https://github.com/Chetan07j/build-jira/graphs/contributors/)
-<!-- [![GitHub issues](https://img.shields.io/github/issues/chetan07j/build-jira.svg)](https://github.com/Chetan07j/build-jira/issues/) [![GitHub issues-closed](https://img.shields.io/github/issues-closed/chetan07j/build-jira.svg)](https://github.com/Chetan07j/build-jira/issues?q=is%3Aissue+is%3Aclosed) -->
+[![GitHub issues](https://img.shields.io/github/issues/chetan07j/build-jira.svg)](https://github.com/Chetan07j/build-jira/issues/)
+[![GitHub issues-closed](https://img.shields.io/github/issues-closed/chetan07j/build-jira.svg)](https://github.com/Chetan07j/build-jira/issues?q=is%3Aissue+is%3Aclosed)
 
 [![NPM](https://nodei.co/npm/build-jira.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/build-jira/)
 
