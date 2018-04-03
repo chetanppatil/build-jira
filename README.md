@@ -3,6 +3,8 @@
 <!-- [![Build Status](https://travis-ci.org/Chetan07j/build-jira.svg?branch=master)](https://travis-ci.org/Chetan07j/build-jira) -->
 [![HitCount](http://hits.dwyl.io/chetan07j/build-jira.svg)](http://hits.dwyl.io/chetan07j/build-jira)
 
+[![NPM](https://nodei.co/npm/build-jira.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/build-jira/)
+
 A node.js module, which provides an object oriented wrapper for the JIRA REST API.
 
 This library is built to support version `3.9.1` of the JIRA Service Desk API.
