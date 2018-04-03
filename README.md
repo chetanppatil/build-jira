@@ -1,10 +1,7 @@
 # NPM Package For JIRA (Service Desk) REST API
 
 <!-- [![Build Status](https://travis-ci.org/Chetan07j/build-jira.svg?branch=master)](https://travis-ci.org/Chetan07j/build-jira) -->
-[![HitCount](http://hits.dwyl.io/chetan07j/build-jira.svg)](http://hits.dwyl.io/chetan07j/build-jira) <a href="https://standardjs.com">
-    <img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square"
-      alt="Standard" />
-  </a> [![GitHub license](https://img.shields.io/github/license/chetan07j/build-jira.svg?style=flat-square)](https://github.com/Chetan07j/build-jira/blob/master/LICENSE)
+[![HitCount](http://hits.dwyl.io/chetan07j/build-jira.svg)](http://hits.dwyl.io/chetan07j/build-jira) [![GitHub license](https://img.shields.io/github/license/chetan07j/build-jira.svg?style=flat-square)](https://github.com/Chetan07j/build-jira/blob/master/LICENSE)
 
 [![NPM](https://nodei.co/npm/build-jira.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/build-jira/)
 
