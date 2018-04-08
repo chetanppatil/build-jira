@@ -33,9 +33,9 @@ $ npm install build-jira
 ### Create the JIRA client
 
 ```javascript
-const jiraApi = require('build-jira').jira;
+const JiraApi = require('build-jira').jira;
 
-const jira = new jiraApi({
+const jira = new JiraApi({
   host: <your-jira-host>,
   username: <jira-user>,
   password: <jira-user-password>
