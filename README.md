@@ -134,6 +134,28 @@ jira.createCustomerAttachment(input, (error, body) => {
 });
 ```
 
+### Add Comment On Customer Issue/Ticket/Request In Service Desk
+
+```javascript
+
+let input = {
+  issueId: <issue-id-to-add-attachment>,
+  comment: <comment-to-add>
+};
+
+jira.addCommentOnCustomerRequest(input, (error, body) => {
+  console.log('RESPONSE:', error, body);
+});
+```
+
+### Get All Comments On Customer Issue/Ticket/Request In Service Desk
+
+```javascript
+jira.getCommentsOnCustomerRequest(<issue-id-key>, (error, body) => {
+  console.log('RESPONSE:', error, body);
+});
+```
+
 ## Options
 
 jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
