@@ -1,13 +1,10 @@
 let chai = require('chai')
 let expect = chai.expect
 const JiraApi = require('../index.js').jira
+const config = require('../config/config.json')
 
 describe('JIRA SERVICE DESK FUNCTIONS TEST:', () => {
-  const jira = new JiraApi({
-    host: <your-jira-host>,
-    username: <jira-user>,
-    password: <jira-user-password>
-  })
+  const jira = new JiraApi(config)
 
   describe('SERVICE DESK INFO:', () => {
     it('Should return version, platformVersion, _links for valid request', (done) => {
