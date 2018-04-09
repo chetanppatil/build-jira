@@ -205,7 +205,8 @@ jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
 
 ## Changelog
 
-- _1.0.7 addCommentOnCustomerRequest, getCommentsOnCustomerRequest, getCustomerRequestStatus functions added_
+
+- _1.0.8 addCommentOnCustomerRequest, getCommentsOnCustomerRequest, getCustomerRequestStatus functions added, and other changes_
 - _1.0.6 createCustomerAttachment function added_
 - _1.0.5 getAllRequestsOfCustomer, getCustomerRequestById functions added and Javascript Standard Style Guid applied_
 - _1.0.4 README updated_
