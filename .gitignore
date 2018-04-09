@@ -58,8 +58,8 @@ typings/
 .env
 
 # package-lock.json & yarn.lock
-package-lock.json
-yarn.lock
+# package-lock.json
+# yarn.lock
 
 test.js
 config/*
