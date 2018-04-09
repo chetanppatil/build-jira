@@ -88,7 +88,7 @@ jira.createServiceDeskTicket(input, (error, body) => {
 ### Get Customer Requests(Tickets)
 
 ```javascript
-/* start and limit are used for pagination */
+/* If start and limit is not passed, then default values 0 and 10 will get applied respectively */
 
 /*
   NOTE: HERE input IS NOT MANDATORY
@@ -151,7 +151,15 @@ jira.addCommentOnCustomerRequest(input, (error, body) => {
 ### Get All Comments On Customer Issue/Ticket/Request In Service Desk
 
 ```javascript
-jira.getCommentsOnCustomerRequest(<issue-id-key>, (error, body) => {
+/* If start and limit is not passed, then default values 0 and 10 will get applied respectively */
+
+let input = {
+  start: <start-index>,
+  limit: <number-of-records-to-return>,
+  issueId: <issue-id-to-add-attachment>
+};
+
+jira.getCommentsOnCustomerRequest(input, (error, body) => {
   console.log('RESPONSE:', error, body);
 });
 ```
