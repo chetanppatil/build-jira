@@ -164,6 +164,22 @@ jira.getCommentsOnCustomerRequest(input, (error, body) => {
 });
 ```
 
+### Get Customer Issue/Ticket/Request Status
+
+```javascript
+/* If start and limit is not passed, then default values 0 and 10 will get applied respectively */
+
+let input = {
+  start: <start-index>,
+  limit: <number-of-records-to-return>,
+  issueId: <issue-id-to-add-attachment>
+};
+
+jira.getCustomerRequestStatus(input, (error, body) => {
+  console.log('RESPONSE:', error, body);
+});
+```
+
 ## Options
 
 jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
@@ -183,9 +199,13 @@ jiraApi options: <!-- * `protocol<string>`: Typically 'http:' or 'https:' -->
   - Get All Requests Of Customer
   - Get Customer Request By Id
   - Create Attachment To Customer Request
+  - Add Comment on Customer Request
+  - Get All Comments On Customer Request
+  - Get Customer Request Status (Current And History)
 
 ## Changelog
 
+- _1.0.7 addCommentOnCustomerRequest, getCommentsOnCustomerRequest, getCustomerRequestStatus functions added_
 - _1.0.6 createCustomerAttachment function added_
 - _1.0.5 getAllRequestsOfCustomer, getCustomerRequestById functions added and Javascript Standard Style Guid applied_
 - _1.0.4 README updated_
