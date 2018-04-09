@@ -4,9 +4,9 @@ const JiraApi = require('../index.js').jira
 
 describe('JIRA SERVICE DESK FUNCTIONS TEST:', () => {
   const jira = new JiraApi({
-    host: 'https://jira-test.b2xcare.com',
-    username: 'SRTSupport',
-    password: 'G3n2438R'
+    host: <your-jira-host>,
+    username: <jira-user>,
+    password: <jira-user-password>
   })
 
   describe('SERVICE DESK INFO:', () => {
