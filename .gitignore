@@ -63,3 +63,7 @@ typings/
 
 test.js
 config/*
+
+#sonar-scanner
+.scannerwork/*
+sonar-project.properties
